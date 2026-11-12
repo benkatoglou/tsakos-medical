@@ -197,12 +197,8 @@
 .doctor__grid { display: grid; grid-template-columns: 5fr 7fr; gap: var(--space-9); align-items: center; }
 .ph-frame {
   display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--space-3);
-  aspect-ratio: 4 / 5; width: 100%; 
-  /* padding: var(--space-6); */
-   text-align: center;
-  background: var(--color-ice); 
-   /* border: 1.5px dashed var(--color-sky); */
-   border-radius: var(--radius-lg); color: var(--color-muted);
+  aspect-ratio: 4 / 5; width: 100%; padding: var(--space-6); text-align: center;
+  background: var(--color-ice); border: 1.5px dashed var(--color-sky); border-radius: var(--radius-lg); color: var(--color-muted);
 }
 .section--ice .ph-frame { background: var(--color-white); }
 .ph-frame .icon { width: 40px; height: 40px; color: var(--color-medical-blue); }

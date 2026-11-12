@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="el">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tsakos Clinic · Γυναικολογία, Ρομποτική Χειρουργική &amp; Μαιευτική · Θεσσαλονίκη</title>
+<meta name="description" content="Από τον ετήσιο έλεγχο έως τις πιο σύνθετες επεμβάσεις, ο Dr. Ηλίας Τσάκος σας συνοδεύει με σύγχρονη τεχνολογία, ειλικρίνεια και χρόνο για τις ερωτήσεις σας.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/brand.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body data-brand="tsakos-clinic">
+<!-- icons:start -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <!-- Line icons, 24px grid, 1.5px stroke, round caps. Paths after Lucide (ISC licence). -->
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></symbol>
+  <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-external" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="m9 16 2 2 4-4"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="i-microscope" viewBox="0 0 24 24"><path d="M6 18h8"/><path d="M3 22h18"/><path d="M14 22a7 7 0 1 0 0-14h-1"/><path d="M9 14h2"/><path d="M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z"/><path d="M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3"/></symbol>
+  <symbol id="i-snowflake" viewBox="0 0 24 24"><path d="M12 2v20"/><path d="m4.93 4.93 14.14 14.14"/><path d="M2 12h20"/><path d="m19.07 4.93-14.14 14.14"/><path d="m9 4 3 2 3-2M9 20l3-2 3 2M4 9l2 3-2 3M20 9l-2 3 2 3"/></symbol>
+  <symbol id="i-clipboard" viewBox="0 0 24 24"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></symbol>
+  <symbol id="i-robot" viewBox="0 0 24 24"><path d="M12 8V4H8"/><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M2 14h2M20 14h2M15 13v2M9 13v2"/></symbol>
+  <symbol id="i-heart-pulse" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol>
+  <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+  <symbol id="i-video" viewBox="0 0 24 24"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="m22 8-6 4 6 4V8z"/></symbol>
+  <symbol id="i-building" viewBox="0 0 24 24"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2M10 6h4M10 10h4M10 14h4M10 18h4"/></symbol>
+  <symbol id="i-quote" viewBox="0 0 24 24"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.76-2.02-2-2H4c-1.25 0-2 .75-2 1.97V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .01-1 1.03V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.76-2.02-2-2h-4c-1.25 0-2 .75-2 1.97V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1"/></symbol>
+  <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.09-3.09a2 2 0 0 0-2.82 0L6 21"/></symbol>
+  <symbol id="i-plane" viewBox="0 0 24 24"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></symbol>
+  <symbol id="i-message" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+  <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></symbol>
+  <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+  <symbol id="i-youtube" viewBox="0 0 24 24"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4v16l13-8z"/></symbol>
+</svg>
+<!-- icons:end -->
+<a class="skip-link" href="#main">Μετάβαση στο περιεχόμενο</a>
+
+<!-- =============================== HEADER (global) =============================== -->
+<header class="site-header" id="top">
+  <div class="utility">
+    <div class="container utility__inner">
+      <nav class="utility__links" aria-label="Δευτερεύον μενού">
+        <a href="#">Η Ομάδα</a>
+        <a href="#journey">Patient Journey</a>
+        <a href="#international">International Patients</a>
+        <a href="#news">Νέα &amp; Media</a>
+        <a href="#contact">Επικοινωνία</a>
+      </nav>
+      <div class="utility__right">
+        <a class="utility__phone" href="tel:+302310420020"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-phone"/></svg>2310 420020</a>
+        <span class="lang" aria-label="Γλώσσα"><span aria-current="true">ΕΛ</span><span class="lang__sep" aria-hidden="true">/</span><a href="#" lang="en" hreflang="en">EN</a></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="masthead">
+    <div class="container masthead__inner">
+      <a class="masthead__logo" href="index.html" aria-label="Tsakos Medical Group — Αρχική"><img src="assets/logos/TMG.svg" alt="Tsakos Medical Group" width="203" height="47"></a>
+
+      <nav class="nav" aria-label="Κύριο μενού">
+        <ul class="nav__list" role="list">
+          <li class="nav__item"><button class="nav__trigger" aria-expanded="false" aria-controls="mega-ec">EmbryoClinic IVF<svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></button></li>
+          <li class="nav__item"><button class="nav__trigger" aria-expanded="false" aria-controls="mega-tc" aria-current="true">Tsakos Clinic<svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></button></li>
+          <li class="nav__item"><button class="nav__trigger" aria-expanded="false" aria-controls="mega-az">AlphaZita<svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></button></li>
+          <li class="nav__item"><button class="nav__trigger" aria-expanded="false" aria-controls="mega-as">Advanced Science<svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></button></li>
+          <li class="nav__item"><a class="nav__trigger" href="https://www.breast-care.gr/" target="_blank" rel="noopener">Breast Care<svg class="icon" aria-hidden="true"><use href="#i-external"/></svg><span class="sr-only">(ανοίγει σε νέα καρτέλα)</span></a></li>
+        </ul>
+      </nav>
+
+      <div class="masthead__actions">
+        <a class="btn btn--sm masthead__cta" href="#contact"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>Κλείστε ραντεβού</a>
+        <a class="icon-btn masthead__call" href="tel:+302310420020" aria-label="Κλήση 2310 420020"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></a>
+        <button class="icon-btn masthead__burger" aria-expanded="false" aria-controls="drawer" aria-label="Άνοιγμα μενού"><svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg></button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Mega-menus -->
+  <div class="mega" id="mega-ec">
+    <div class="container mega__inner">
+      <div class="mega__intro">
+        <img src="assets/logos/EmbryoClinic.svg" alt="EmbryoClinic IVF">
+        <p>Εξατομικευμένες θεραπείες γονιμότητας και εξωσωματικής, από το 2013.</p>
+        <a class="link" href="#">Αρχική EmbryoClinic <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="mega__cols" style="--cols:4">
+        <div class="mega__col"><h3><a href="#">Γονιμότητα</a></h3><ul>
+          <li><a href="#">Έλεγχος Γονιμότητας σε Μία Επίσκεψη</a></li>
+          <li><a href="#">Εξειδικευμένες Θεραπείες Γονιμότητας</a></li>
+          <li><a href="#">Προγράμματα Βελτιστοποίησης Γονιμότητας</a></li>
+          <li><a href="#">SpermClinic | Ανδρική Γονιμότητα</a></li>
+          <li><a href="#">Χειρουργική Γονιμότητας</a></li>
+        </ul></div>
+        <div class="mega__col"><h3><a href="#">Εξωσωματική Γονιμοποίηση IVF</a></h3><ul>
+          <li><a href="#">IVF – ICSI</a></li>
+          <li><a href="#">Ήπια Διέγερση &amp; Φυσικός Κύκλος</a></li>
+          <li><a href="#">DUO STIM</a></li>
+          <li><a href="#">Σπερματέγχυση IUI</a></li>
+          <li><a href="#">Προεμφυτευτικός Γενετικός Έλεγχος</a></li>
+          <li><a href="#">Κλινική Διαχείριση Παρένθετης Μητρότητας</a></li>
+          <li><a href="#">IVF Add-ons</a></li>
+        </ul></div>
+        <div class="mega__col"><h3><a href="#">Εξειδικευμένες Θεραπείες</a></h3><ul>
+          <li><a href="#">Σύνθετα Γυναικολογικά Περιστατικά</a></li>
+          <li><a href="#">Ενδομήτριο Μικροβίωμα</a></li>
+          <li><a href="#">Αναπαραγωγική Ανοσολογία</a></li>
+          <li><a href="#">PCOS &amp; Ορμονική Υγεία</a></li>
+          <li><a href="#">Πρόωρη Ωοθηκική Ανεπάρκεια</a></li>
+          <li><a href="#">Ενδομητρίωση &amp; Χειρουργική Γονιμότητας</a></li>
+          <li><a href="#">Myoma Clinic</a></li>
+          <li><a href="#">PRP &amp; Follicular Activation</a></li>
+          <li><a href="#">Γονιμότητα &amp; Ογκολογικοί Ασθενείς</a></li>
+        </ul></div>
+        <div class="mega__col"><h3><a href="#">Συντήρηση Γονιμότητας</a></h3><ul>
+          <li><a href="#">Κρυοσυντήρηση Ωαρίων</a></li>
+          <li><a href="#">Κρυοσυντήρηση Σπέρματος</a></li>
+          <li><a href="#">Κρυοσυντήρηση Εμβρύων</a></li>
+        </ul>
+        <h3 style="margin-top:var(--space-5)"><a href="#">Περισσότερα</a></h3><ul>
+          <li><a href="#">Προγράμματα Δωρεάς</a></li>
+          <li><a href="#">Rainbow Services</a></li>
+          <li><a href="#">Εξειδικευμένη Συμβουλευτική</a></li>
+          <li><a href="#">Ολιστική Υποστήριξη (AlphaZita)</a></li>
+        </ul></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mega" id="mega-tc">
+    <div class="container mega__inner">
+      <div class="mega__intro">
+        <img src="assets/logos/Tsakos_Clinic.svg" alt="Tsakos Clinic">
+        <p>Γυναικολογική φροντίδα και ρομποτική χειρουργική, από το 1999.</p>
+        <a class="link" href="tsakos-clinic.html">Αρχική Tsakos Clinic <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="mega__cols" style="--cols:4">
+        <div class="mega__col"><h3><a href="#">Γυναικολογικό Ιατρείο</a></h3><ul>
+          <li><a href="#">Προληπτικός Έλεγχος (Check-up)</a></li>
+          <li><a href="#">Διάγνωση &amp; Αντιμετώπιση Παθήσεων</a></li>
+          <li><a href="#">Γονιμότητα &amp; Αναπαραγωγική Υγεία</a></li>
+          <li><a href="#">Αντισύλληψη</a></li>
+          <li><a href="#">Πρώτη Περίοδος</a></li>
+          <li><a href="#">Εμμηνόπαυση – Μεταεμμηνόπαυση</a></li>
+          <li><a href="#">Φροντίδα Μαστού</a></li>
+        </ul></div>
+        <div class="mega__col"><h3><a href="#">Ρομποτική &amp; Προχωρημένη Χειρουργική</a></h3><ul>
+          <li><a href="#">Ινομυώματα</a></li>
+          <li><a href="#">Ενδομητρίωση</a></li>
+          <li><a href="#">Υστερεκτομή</a></li>
+          <li><a href="#">Πρόπτωση Μήτρας &amp; Πυελικού Εδάφους</a></li>
+        </ul>
+        <h3 style="margin-top:var(--space-5)"><a href="#">Λαπαροσκοπική Χειρουργική</a></h3><ul>
+          <li><a href="#">Διαγνωστική Λαπαροσκόπηση</a></li>
+          <li><a href="#">Παθήσεις Σαλπίγγων</a></li>
+        </ul></div>
+        <div class="mega__col"><h3><a href="#">Υστεροσκόπηση</a></h3><ul>
+          <li><a href="#">Διαγνωστική Υστεροσκόπηση</a></li>
+          <li><a href="#">Ενδομήτριοι Πολύποδες</a></li>
+          <li><a href="#">Ενδομήτριες Συμφύσεις</a></li>
+          <li><a href="#">Συγγενείς Ανωμαλίες Μήτρας</a></li>
+        </ul>
+        <h3 style="margin-top:var(--space-5)"><a href="#">Χειρουργική της Αναπαραγωγής</a></h3><ul>
+          <li><a href="#">Χειρουργική Διατήρησης Γονιμότητας</a></li>
+          <li><a href="#">Υδροσάλπιγγες</a></li>
+        </ul></div>
+        <div class="mega__col"><h3><a href="#">Μαιευτική Φροντίδα</a></h3><ul>
+          <li><a href="#">Παρακολούθηση κύησης</a></li>
+        </ul></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mega" id="mega-az">
+    <div class="container mega__inner">
+      <div class="mega__intro">
+        <img src="assets/logos/AZ.svg" alt="AlphaZita">
+        <p>Ολιστική υποστήριξη γονιμότητας και γυναικείας ευεξίας.</p>
+        <a class="link" href="#">Αρχική AlphaZita <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="mega__cols" style="--cols:3">
+        <div class="mega__col"><h3><a href="#">Ολιστική Υποστήριξη</a></h3></div>
+        <div class="mega__col"><h3><a href="#">Γυναικεία Ευεξία</a></h3></div>
+        <div class="mega__col"><h3><a href="#">Υπηρεσίες</a></h3></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mega" id="mega-as">
+    <div class="container mega__inner">
+      <div class="mega__intro">
+        <p class="t-h3" style="color:var(--color-navy);margin-bottom:var(--space-3)">Advanced Science</p>
+        <p>Έρευνα, καινοτόμες τεχνολογίες και διεθνείς συνεργασίες.</p>
+        <a class="link" href="#">Αρχική Advanced Science <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="mega__cols" style="--cols:4">
+        <div class="mega__col"><h3><a href="#">Ερευνητικό Έργο</a></h3></div>
+        <div class="mega__col"><h3><a href="#">Καινοτόμες Τεχνολογίες</a></h3></div>
+        <div class="mega__col"><h3><a href="#">Διεθνείς Συνεργασίες</a></h3></div>
+        <div class="mega__col"><h3><a href="#">Εκπαίδευση</a></h3></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile drawer -->
+<div class="drawer" id="drawer" aria-label="Μενού">
+  <div class="drawer__group">
+    <button class="drawer__toggle" aria-expanded="false" aria-controls="dr-ec">EmbryoClinic IVF<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button>
+    <div class="drawer__panel" id="dr-ec" hidden><a href="#">Γονιμότητα</a><a href="#">Εξωσωματική Γονιμοποίηση IVF</a><a href="#">Εξειδικευμένες Θεραπείες</a><a href="#">Συντήρηση Γονιμότητας</a><a href="#">Προγράμματα Δωρεάς</a><a href="#">SpermClinic | Ανδρική Γονιμότητα</a></div>
+  </div>
+  <div class="drawer__group">
+    <button class="drawer__toggle" aria-expanded="false" aria-controls="dr-tc">Tsakos Clinic<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button>
+    <div class="drawer__panel" id="dr-tc" hidden><a href="tsakos-clinic.html">Αρχική Tsakos Clinic</a><a href="#">Γυναικολογικό Ιατρείο</a><a href="#">Γυναικολογική Χειρουργική</a><a href="#">Μαιευτική Φροντίδα</a></div>
+  </div>
+  <div class="drawer__group">
+    <button class="drawer__toggle" aria-expanded="false" aria-controls="dr-az">AlphaZita<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button>
+    <div class="drawer__panel" id="dr-az" hidden><a href="#">Ολιστική Υποστήριξη</a><a href="#">Γυναικεία Ευεξία</a><a href="#">Υπηρεσίες</a></div>
+  </div>
+  <div class="drawer__group">
+    <button class="drawer__toggle" aria-expanded="false" aria-controls="dr-as">Advanced Science<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button>
+    <div class="drawer__panel" id="dr-as" hidden><a href="#">Ερευνητικό Έργο</a><a href="#">Καινοτόμες Τεχνολογίες</a><a href="#">Διεθνείς Συνεργασίες</a><a href="#">Εκπαίδευση</a></div>
+  </div>
+  <div class="drawer__group"><a class="drawer__toggle" href="https://www.breast-care.gr/" target="_blank" rel="noopener">Breast Care<svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a></div>
+  <nav class="drawer__secondary" aria-label="Δευτερεύον μενού">
+    <a href="#">Η Ομάδα</a><a href="#journey">Patient Journey</a><a href="#international">International Patients</a><a href="#news">Νέα &amp; Media</a><a href="#contact">Επικοινωνία</a>
+  </nav>
+  <div class="drawer__foot">
+    <a class="btn btn--primary btn--block" href="#contact"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>Κλείστε ραντεβού</a>
+    <a class="btn btn--secondary btn--block" href="tel:+302310420020"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>2310 420020</a>
+  </div>
+  <p class="drawer__lang">Γλώσσα: <strong>ΕΛ</strong> · <a href="#" lang="en">EN</a></p>
+</div>
+
+<main id="main">
+
+  <!-- =============================== 1. INTRO (subpage hero) =============================== -->
+  <section class="subhero" aria-labelledby="hero-title">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Διαδρομή"><ol><li><a href="index.html">Tsakos Medical Group</a></li><li><span aria-current="page">Tsakos Clinic</span></li></ol></nav>
+      <div class="subhero__grid">
+        <div class="subhero__copy">
+          <img class="subhero__logo" src="assets/logos/Tsakos_Clinic.svg" alt="Tsakos Clinic" width="220" height="34">
+          <h1 class="subhero__title" id="hero-title">Γυναικολογική φροντίδα και ρομποτική χειρουργική, με ακρίβεια και ηρεμία</h1>
+          <p class="subhero__sub">Από τον ετήσιο έλεγχο έως τις πιο σύνθετες επεμβάσεις, ο Dr. Ηλίας Τσάκος σας συνοδεύει με σύγχρονη τεχνολογία, ειλικρίνεια και χρόνο για τις ερωτήσεις σας.</p>
+          <div class="subhero__ctas" id="hero-ctas">
+            <a class="btn btn--primary" href="#contact">Κλείστε ραντεβού στο Γυναικολογικό Ιατρείο<svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="link" href="#services">Δείτε τις υπηρεσίες μας<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+        <figure class="subhero__media">
+          <img src="assets/img/t1-hero.jpg" alt="Γυναίκα σαράντα και κάτι ετών με απαλό λιλά φουλάρι, καθισμένη σε φωτεινό ιατρείο, ακούει ήρεμα τη γιατρό της" width="1024" height="1280" fetchpriority="high">
+        </figure>
+      </div>
+      <ul class="subnav" id="services" role="list" aria-label="Κύριες υπηρεσίες">
+        <li><a href="#practice"><svg class="icon" aria-hidden="true"><use href="#i-clipboard"/></svg><span><strong>Γυναικολογικό Ιατρείο</strong><span>Πρόληψη, διάγνωση και θεραπεία σε κάθε ηλικία.</span></span><svg class="icon icon--go" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+        <li><a href="#surgery"><svg class="icon" aria-hidden="true"><use href="#i-robot"/></svg><span><strong>Γυναικολογική Χειρουργική</strong><span>Ρομποτικές, λαπαροσκοπικές και υστεροσκοπικές επεμβάσεις ελάχιστης επέμβασης.</span></span><svg class="icon icon--go" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+        <li><a href="#obstetrics"><svg class="icon" aria-hidden="true"><use href="#i-heart-pulse"/></svg><span><strong>Μαιευτική Φροντίδα</strong><span>Συνοδεία από την πρώτη εξέταση έως τη γέννηση.</span></span><svg class="icon icon--go" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- =============================== 2. GYNAECOLOGY PRACTICE =============================== -->
+  <section class="section section--lg" id="practice" aria-labelledby="practice-title">
+    <div class="container split">
+      <figure class="split__media reveal"><img src="assets/img/t2-practice.jpg" alt="Σύγχρονο γυναικολογικό ιατρείο με υπερηχογράφο, λευκά ντουλάπια και φως από μεγάλο παράθυρο" width="1280" height="960"></figure>
+      <div class="split__copy">
+        <span class="t-eyebrow reveal">Γυναικολογικό Ιατρείο</span>
+        <h2 class="t-h2 reveal" style="--i:1" id="practice-title">Γυναικολογικό Ιατρείο: πρόληψη με ακρίβεια</h2>
+        <p class="t-body reveal" style="--i:2">Από τον ετήσιο προληπτικό έλεγχο έως τη διαχείριση σύνθετων παθήσεων, το ιατρείο μας συνδυάζει εξοπλισμό ιδιαίτερης ακρίβειας — υπερηχογράφο GE Voluson E10 και ψηφιακή κολποσκόπηση DYSIS® — με χρόνο και προσοχή για κάθε γυναίκα. Στόχος μας είναι να γνωρίζετε το σώμα σας και να παίρνετε αποφάσεις με σιγουριά.</p>
+        <figure class="dr-quote reveal" style="--i:3">
+          <span class="monogram monogram--sm" aria-hidden="true">ΗΤ</span>
+          <div><blockquote><p>«Κάθε γυναίκα αξίζει μια ιατρική σχέση βασισμένη στην εμπιστοσύνη, την ειλικρίνεια και την εξατομίκευση.»</p></blockquote><figcaption><cite>Dr. Ηλίας Τσάκος</cite></figcaption></div>
+        </figure>
+        <a class="btn btn--primary reveal" style="--i:4" href="#">Γυναικολογικό Ιατρείο<svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================== 3. SURGERY → ROBOTIC (VIDEO) — the one lilac band =============================== -->
+  <section class="section section--lg section--accent" id="surgery" aria-labelledby="surgery-title">
+    <div class="container robotic__grid">
+      <div class="robotic__copy">
+        <span class="t-eyebrow reveal">Γυναικολογική Χειρουργική</span>
+        <h2 class="t-h2 reveal" style="--i:1" id="surgery-title">Ρομποτική χειρουργική: δεξιότητα και σύγχρονη τεχνολογία</h2>
+        <p class="t-body reveal" style="--i:2">Ο Dr. Ηλίας Τσάκος είναι πιστοποιημένος ρομποτικός χειρουργός στο σύστημα da Vinci και πρόεδρος της Ελληνικής Εταιρείας Ρομποτικής Γυναικολογικής Χειρουργικής. Η ρομποτική τεχνική επιτρέπει επεμβάσεις με μικρές τομές, λιγότερο πόνο και ταχύτερη ανάρρωση, για ινομυώματα, ενδομητρίωση, υστερεκτομή και πρόπτωση μήτρας.</p>
+        <ul class="chips reveal" style="--i:3" role="list">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Μικρές τομές</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Λιγότερος πόνος</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Γρήγορη επιστροφή</li>
+        </ul>
+        <div class="reveal" style="--i:4"><a class="btn btn--primary" href="#">Ρομποτική Χειρουργική<svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      </div>
+      <figure class="video reveal" style="--i:2">
+        <video muted loop playsinline autoplay preload="metadata" poster="assets/img/t3-robotic-poster.jpg" aria-hidden="true" tabindex="-1">
+          <source src="assets/video/robotic-surgery.mp4" type="video/mp4">
+        </video>
+        <button class="video__play" type="button" data-video-open aria-label="Αναπαραγωγή βίντεο: Ρομποτική Χειρουργική στη Γυναικολογία"><span><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg></span><span>Δείτε το βίντεο</span></button>
+        <figcaption class="video__caption">Ρομποτική Χειρουργική στη Γυναικολογία</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- =============================== 4. TEAM =============================== -->
+  <section class="section section--lg" id="team" aria-labelledby="team-title">
+    <div class="container">
+      <figure class="team__photo reveal">
+        <img src="assets/img/t4-team-area.jpg" alt="Φωτεινός διάδρομος της κλινικής με λευκές ιατρικές ποδιές σε ξύλινες κρεμάστρες" width="1536" height="864">
+      </figure>
+      <div class="team__head">
+        <h2 class="t-h2 reveal" id="team-title">Η ομάδα μας</h2>
+        <p class="t-body reveal" style="--i:1">Μια ομάδα εξειδικευμένων γυναικολόγων, μαιών και συντονιστριών, με επικεφαλής τον Dr. Ηλία Τσάκο, που μοιράζονται την ίδια φιλοσοφία φροντίδας.</p>
+      </div>
+      <ul class="doctors" role="list">
+        <li class="doc-card reveal"><div class="doc-card__ph"><span class="monogram" aria-hidden="true">ΗΤ</span></div><h3>Dr. Ηλίας Τσάκος</h3><p>Ιδρυτής &amp; Επιστημονικός Διευθυντής</p></li>
+        <li class="doc-card reveal" style="--i:1"><div class="doc-card__ph"><span class="monogram" aria-hidden="true">ΚΜ</span></div><h3>Dr. Κανελίνα Μπίμπα</h3><p>Χειρουργός Μαστού</p></li>
+        <li class="doc-card reveal" style="--i:2"><div class="doc-card__ph"><span class="monogram" aria-hidden="true">ΑΤ</span></div><h3>Dr. Αθανάσιος Τολίκας</h3><p>Μαιευτήρας-Γυναικολόγος</p></li>
+        <li class="doc-card reveal" style="--i:3"><div class="doc-card__ph"><span class="monogram" aria-hidden="true">ΣΦ</span></div><h3>Dr. Στεφανή Φίλιου</h3><p>Μαιευτήρας-Γυναικολόγος</p></li>
+      </ul>
+      <div class="section-foot reveal"><a class="btn btn--secondary" href="#">Η Ομάδα</a></div>
+    </div>
+  </section>
+
+  <!-- =============================== 5. FERTILITY → EMBRYOCLINIC (brand switch preview) =============================== -->
+  <section class="section section--lg" id="fertility" aria-labelledby="fertility-title" data-brand="embryoclinic">
+    <div class="container split split--reverse">
+      <figure class="split__media reveal"><img src="assets/img/t5-fertility.jpg" alt="Δύο χέρια σχηματίζουν απαλά μια αγκαλιά δίπλα σε φωτεινό παράθυρο" width="1280" height="960"></figure>
+      <div class="split__copy">
+        <img class="xlink__logo reveal" src="assets/logos/EmbryoClinic.svg" alt="EmbryoClinic IVF">
+        <span class="xlink__line reveal" aria-hidden="true"></span>
+        <h2 class="t-h2 reveal" style="--i:1" id="fertility-title">Γονιμότητα και Αναπαραγωγική Υγεία</h2>
+        <p class="t-body reveal" style="--i:2">Όταν η επιθυμία για ένα παιδί χρειάζεται βοήθεια, η EmbryoClinic συνεχίζει τη φροντίδα σας με την ίδια ομάδα: έλεγχος γονιμότητας σε μία επίσκεψη, IVF και συντήρηση γονιμότητας.</p>
+        <a class="btn btn--primary reveal" style="--i:3" href="#">Μάθετε στην EmbryoClinic<svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================== 6. OBSTETRIC CARE (warm ivory) =============================== -->
+  <section class="section section--lg section--ivory" id="obstetrics" aria-labelledby="obstetrics-title">
+    <div class="container split">
+      <figure class="split__media split__media--tall reveal"><img src="assets/img/t6-obstetrics.jpg" alt="Έγκυος γυναίκα με λευκό λινό φόρεμα στέκεται δίπλα σε παράθυρο με απαλό φως" width="1024" height="1280"></figure>
+      <div class="split__copy">
+        <span class="t-eyebrow reveal">Μαιευτική</span>
+        <h2 class="t-h2 reveal" style="--i:1" id="obstetrics-title">Μαιευτική Φροντίδα</h2>
+        <p class="t-lead reveal" style="--i:2">Η εγκυμοσύνη είναι ένα μοναδικό ταξίδι. Σας συνοδεύουμε από τον προγενετικό έλεγχο έως τον τοκετό, με στενή παρακολούθηση, υπερηχογραφικό έλεγχο 3D/4D και την εμπειρία μιας ομάδας που βρίσκεται δίπλα σας σε κάθε ερώτημα.</p>
+        <a class="btn btn--primary reveal" style="--i:3" href="#">Μαιευτική Φροντίδα<svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================== 7. CONDITIONS =============================== -->
+  <section class="section section--lg" id="conditions" aria-labelledby="conditions-title">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-head__text"><h2 class="t-h2 reveal" id="conditions-title">Μάθετε για τις παθήσεις</h2></div>
+        <a class="btn btn--secondary reveal" style="--i:1" href="#">Όλες οι παθήσεις</a>
+      </div>
+      <ul class="conditions" role="list">
+        <li class="reveal"><a class="cond-card" href="#"><img src="assets/img/t7a-linen.jpg" alt="" width="1264" height="848"><span class="cond-card__body"><h3>Ινομυώματα</h3><p>Καλοήθεις όγκοι της μήτρας με αντιμετώπιση που σέβεται τη γονιμότητα και την ποιότητα ζωής.</p><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+        <li class="reveal" style="--i:1"><a class="cond-card" href="#"><img src="assets/img/t7b-water.jpg" alt="" width="1264" height="848"><span class="cond-card__body"><h3>Ενδομητρίωση</h3><p>Χρόνιος πόνος και δυσκολία σύλληψης: διάγνωση και σύγχρονη χειρουργική αντιμετώπιση.</p><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+        <li class="reveal" style="--i:2"><a class="cond-card" href="#"><img src="assets/img/t7c-petal.jpg" alt="" width="1264" height="848"><span class="cond-card__body"><h3>Διαταραχές Κύκλου</h3><p>Ακανόνιστη, έντονη ή επώδυνη περίοδος; Βρίσκουμε την αιτία και τη λύση.</p><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+        <li class="reveal" style="--i:3"><a class="cond-card" href="#"><img src="assets/img/t7d-frost.jpg" alt="" width="1264" height="848"><span class="cond-card__body"><h3>Παθήσεις των Ωοθηκών</h3><p>Κύστεις, PCOS και ορμονικές διαταραχές με εξατομικευμένη παρακολούθηση.</p><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+        <li class="reveal" style="--i:4"><a class="cond-card" href="#"><img src="assets/img/t7e-leaves.jpg" alt="" width="1264" height="848"><span class="cond-card__body"><h3>Κονδυλώματα &amp; HPV</h3><p>Πρόληψη, κολποσκόπηση και θεραπεία με διακριτικότητα και ακρίβεια.</p><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- =============================== 8. FAQ =============================== -->
+  <section class="section section--lg section--mist" id="faq" aria-labelledby="faq-title">
+    <div class="container faq__grid">
+      <div class="faq__intro">
+        <h2 class="t-h2 reveal" id="faq-title">Συχνές ερωτήσεις</h2>
+        <a class="btn btn--secondary reveal" style="--i:2" href="#">Όλες οι ερωτήσεις</a>
+      </div>
+      <div class="accordion reveal" style="--i:1">
+        <div class="accordion__item"><h3><button class="accordion__btn" aria-expanded="true" aria-controls="faq-1" id="faq-1-btn">Κάθε πότε πρέπει να κάνω γυναικολογικό έλεγχο;<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button></h3><div class="accordion__panel" id="faq-1" role="region" aria-labelledby="faq-1-btn"><p>Για τις περισσότερες γυναίκες συνιστάται ένας έλεγχος τον χρόνο, με τεστ Παπανικολάου και υπερηχογράφημα. Ανάλογα με την ηλικία, το ιστορικό και τα συμπτώματα, ο γιατρός σας μπορεί να προτείνει συχνότερη παρακολούθηση ή επιπλέον εξετάσεις.</p></div></div>
+        <div class="accordion__item"><h3><button class="accordion__btn" aria-expanded="false" aria-controls="faq-2" id="faq-2-btn">Ποια η διαφορά ρομποτικής και λαπαροσκοπικής χειρουργικής;<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button></h3><div class="accordion__panel" id="faq-2" role="region" aria-labelledby="faq-2-btn" hidden><p>Και οι δύο τεχνικές είναι ελάχιστα επεμβατικές και γίνονται μέσα από μικρές τομές. Στη ρομποτική, ο χειρουργός χειρίζεται το σύστημα da Vinci από κονσόλα, με τρισδιάστατη όραση υψηλής ευκρίνειας και αρθρωτά εργαλεία που προσφέρουν μεγαλύτερη ακρίβεια σε σύνθετα περιστατικά. Η κατάλληλη τεχνική επιλέγεται μαζί σας, ανάλογα με την περίπτωση.</p></div></div>
+        <div class="accordion__item"><h3><button class="accordion__btn" aria-expanded="false" aria-controls="faq-3" id="faq-3-btn">Πόσο διαρκεί η ανάρρωση μετά από μια υστεροσκόπηση;<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button></h3><div class="accordion__panel" id="faq-3" role="region" aria-labelledby="faq-3-btn" hidden><p>Μετά από μια διαγνωστική υστεροσκόπηση οι περισσότερες γυναίκες επιστρέφουν στις δραστηριότητές τους την ίδια ή την επόμενη ημέρα. Μετά από επεμβατική υστεροσκόπηση μπορεί να χρειαστούν μία έως δύο ημέρες ξεκούρασης. Ήπιοι πόνοι ή λίγη αιμόρροια για λίγες ημέρες είναι αναμενόμενα· θα λάβετε εξατομικευμένες οδηγίες.</p></div></div>
+        <div class="accordion__item"><h3><button class="accordion__btn" aria-expanded="false" aria-controls="faq-4" id="faq-4-btn">Μπορώ να μείνω έγκυος μετά από αφαίρεση ινομυωμάτων;<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button></h3><div class="accordion__panel" id="faq-4" role="region" aria-labelledby="faq-4-btn" hidden><p>Σε πολλές περιπτώσεις ναι. Η αφαίρεση ινομυωμάτων (μυομεκτομή) γίνεται με στόχο να διατηρηθεί η μήτρα και η γονιμότητα. Το πότε μπορείτε να προσπαθήσετε για εγκυμοσύνη και ο τρόπος τοκετού εξαρτώνται από το μέγεθος, τη θέση των ινομυωμάτων και την τεχνική· τα συζητάμε αναλυτικά μαζί σας.</p></div></div>
+        <div class="accordion__item"><h3><button class="accordion__btn" aria-expanded="false" aria-controls="faq-5" id="faq-5-btn">Προσφέρετε online συμβουλευτική;<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button></h3><div class="accordion__panel" id="faq-5" role="region" aria-labelledby="faq-5-btn" hidden><p>Ναι. Προσφέρουμε online συμβουλευτική μέσω βιντεοκλήσης για την πρώτη επικοινωνία, την ενημέρωση για αποτελέσματα εξετάσεων και την παρακολούθηση, ιδιαίτερα για ασθενείς εκτός Θεσσαλονίκης ή από το εξωτερικό. Μπορείτε να κλείσετε ραντεβού από τη φόρμα επικοινωνίας ή στο 2310 420020.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================== 9. CARE AT EVERY STAGE =============================== -->
+  <section class="section section--lg" id="stages" aria-labelledby="stages-title">
+    <div class="container">
+      <div class="section-head"><div class="section-head__text"><h2 class="t-h2 reveal" id="stages-title">Δίπλα σας σε κάθε στάδιο της ζωής</h2></div></div>
+      <ol class="stages" role="list">
+        <li class="stage reveal"><h3>Πρώτη Περίοδος</h3><p>Ευαίσθητη ενημέρωση και φροντίδα για κορίτσια και γονείς.</p></li>
+        <li class="stage reveal" style="--i:1"><h3>Αντισύλληψη</h3><p>Η κατάλληλη μέθοδος για το σώμα και τον τρόπο ζωής σας.</p></li>
+        <li class="stage reveal" style="--i:2"><h3>Εμμηνόπαυση</h3><p>Διαχείριση συμπτωμάτων και πρόληψη για τα επόμενα χρόνια.</p></li>
+        <li class="stage reveal" style="--i:3"><h3>Φροντίδα Μαστού</h3><p>Προληπτικός έλεγχος και έγκαιρη διάγνωση, σε συνεργασία με το Breast Care.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- =============================== 10. NEWS (Tsakos Clinic) =============================== -->
+  <section class="section section--lg section--mist news" id="news" aria-labelledby="news-title">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-head__text"><h2 class="t-h2 reveal" id="news-title">Νέα</h2></div>
+        <a class="btn btn--secondary reveal" style="--i:1" href="#">Όλα τα Νέα</a>
+      </div>
+      <ul class="news__grid" role="list">
+        <li class="reveal"><a class="news-card" href="#"><span class="news-card__media"><img src="assets/img/h6a-hergs.jpg" alt="Αίθουσα επιστημονικής ημερίδας με κοινό και οθόνη παρουσίασης" width="1536" height="1024"></span><span class="news-card__meta"><span class="news-card__cat">Νέα</span><time datetime="2026-11-05">5 Νοε 2026</time></span><h3>Επιστημονική διημερίδα HERGS για τη ρομποτική γυναικολογική χειρουργική</h3></a></li>
+        <li class="reveal" style="--i:1"><a class="news-card" href="#"><span class="news-card__media"><img src="assets/img/h6c-fibroids.jpg" alt="Γυναικεία χέρια κρατούν ζεστή κούπα δίπλα σε φωτεινό παράθυρο" width="1536" height="1024"></span><span class="news-card__meta"><span class="news-card__cat">Άρθρα</span><time datetime="2026-10-08">8 Οκτ 2026</time></span><h3>Ινομυώματα: συμπτώματα και σύγχρονες θεραπείες</h3></a></li>
+        <li class="reveal" style="--i:2"><a class="news-card" href="#"><span class="news-card__media"><img src="assets/img/t2-practice.jpg" alt="Σύγχρονο γυναικολογικό ιατρείο με υπερηχογράφο" width="1280" height="960"></span><span class="news-card__meta"><span class="news-card__cat">Άρθρα</span><time datetime="2026-09-24">24 Σεπ 2026</time></span><h3>Ο ετήσιος γυναικολογικός έλεγχος: τι περιλαμβάνει</h3></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- =============================== 9. CONTACT =============================== -->
+  <section class="section section--lg section--ice contact" id="contact" aria-labelledby="contact-title">
+    <div class="container contact__grid">
+      <div class="contact__panel reveal">
+        <h2 class="t-h2" id="contact-title">Έτοιμοι να κάνουμε μαζί το πρώτο βήμα;</h2>
+        <p class="t-lead">Προγραμματίστε online ή δια ζώσης συμβουλευτική. Η ομάδα μας θα επικοινωνήσει μαζί σας το συντομότερο.</p>
+        <form class="form" action="#" method="post" novalidate>
+          <div class="field"><label for="f-name">Ονοματεπώνυμο <span class="req" aria-hidden="true">*</span></label><input class="input" id="f-name" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="f-phone">Τηλέφωνο <span class="req" aria-hidden="true">*</span></label><input class="input" id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+          <div class="field field--full"><label for="f-email">Email <span class="req" aria-hidden="true">*</span></label><input class="input" id="f-email" name="email" type="email" autocomplete="email" required></div>
+          <div class="field"><label for="f-interest">Ενδιαφέρομαι για</label>
+            <select class="select" id="f-interest" name="interest"><option>Γονιμότητα &amp; IVF</option><option selected>Γυναικολογία</option><option>Χειρουργική</option><option>Μαιευτική</option><option>Άλλο</option></select></div>
+          <fieldset class="field"><legend>Προτιμώ</legend>
+            <div class="segmented"><label><input type="radio" name="pref" value="online" checked><svg class="icon" aria-hidden="true"><use href="#i-monitor"/></svg>Online</label><label><input type="radio" name="pref" value="in-person"><svg class="icon" aria-hidden="true"><use href="#i-building"/></svg>Δια ζώσης</label></div></fieldset>
+          <div class="field field--full"><label for="f-msg">Μήνυμα</label><textarea class="textarea" id="f-msg" name="message" rows="4"></textarea></div>
+          <label class="check field--full"><input type="checkbox" name="consent" required><span>Συμφωνώ με την επεξεργασία των στοιχείων μου για την επικοινωνία μαζί μου, σύμφωνα με την <a href="#">Πολιτική Απορρήτου</a>.</span></label>
+          <div class="form__submit">
+            <span class="form__note">Τα πεδία με * είναι υποχρεωτικά.</span>
+            <button class="btn btn--primary" type="submit">Αποστολή αιτήματος<svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          </div>
+        </form>
+      </div>
+
+      <div class="contact-info reveal" style="--i:1">
+        <div class="contact-info__card">
+          <ul class="contact-info__list" role="list">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><div><strong>Τηλέφωνο</strong><a class="contact-info__big" href="tel:+302310420020">2310 420020</a></div></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><div><strong>Διεύθυνση</strong><address>Αδριανουπόλεως 6, 551 33 Θεσσαλονίκη</address></div></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><div><strong>Email</strong><a href="mailto:info@embryoclinic.eu">info@embryoclinic.eu</a></div></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg><div><strong>Ωράριο</strong><span>Δευ–Παρ 07:00–15:00<br>Σάβ 08:00–13:00</span></div></li>
+          </ul>
+        </div>
+        <a class="map-ph" href="https://maps.google.com/?q=Αδριανουπόλεως+6,+Θεσσαλονίκη" target="_blank" rel="noopener" aria-label="Χάρτης: Αδριανουπόλεως 6, Θεσσαλονίκη (ανοίγει τους Χάρτες Google σε νέα καρτέλα)">
+          <svg viewBox="0 0 400 220" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <rect width="400" height="220" style="fill:var(--color-ice)"/>
+            <path d="M-10 60 L420 20 M-10 150 L420 120 M60 -10 L110 240 M200 -10 L230 240 M330 -10 L300 240 M-10 200 L180 240" style="stroke:var(--color-white)" stroke-width="10" fill="none"/>
+            <path d="M-10 105 Q 200 70 420 75" style="stroke:var(--color-sky)" stroke-width="14" fill="none"/>
+            <path d="M0 220 Q 120 175 420 205 L420 220 Z" style="fill:var(--color-sky)" opacity=".6"/>
+            <circle cx="216" cy="92" r="16" style="fill:var(--color-teal)" opacity=".25"/><circle cx="216" cy="92" r="7" style="fill:var(--color-navy)"/>
+          </svg>
+          <span class="map-ph__label"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-route"/></svg>Οδηγίες πρόσβασης</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+<!-- Video lightbox -->
+<dialog class="lightbox" id="video-lightbox" aria-label="Βίντεο: Ρομποτική Χειρουργική στη Γυναικολογία — Χειρουργική δεξιότητα και σύγχρονη τεχνολογία">
+  <button class="icon-btn lightbox__close" type="button" data-video-close aria-label="Κλείσιμο βίντεο"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+  <video controls playsinline preload="none" poster="assets/img/t3-robotic-poster.jpg">
+    <source src="assets/video/robotic-surgery.mp4" type="video/mp4">
+  </video>
+</dialog>
+
+<!-- =============================== FOOTER =============================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__brands">
+      <a class="footer__tmg" href="index.html" aria-label="Tsakos Medical Group — Αρχική"><img src="assets/logos/TMG_white.svg" alt="Tsakos Medical Group"></a>
+      <ul class="footer__brands-row" role="list" aria-label="Οι μονάδες μας">
+        <li><a href="#"><img src="assets/logos/EmbryoClinic_white.svg" alt="EmbryoClinic IVF"></a></li>
+        <li><a href="tsakos-clinic.html"><img src="assets/logos/Tsakos_Clinic_white.svg" alt="Tsakos Clinic"></a></li>
+        <li><a class="footer__az" href="#"><img src="assets/logos/AZ.svg" alt="AlphaZita"></a></li>
+        <li><a class="footer__bc" href="https://www.breast-care.gr/" target="_blank" rel="noopener"><img src="assets/logos/BreastCare.png" alt="Breast Care (ανοίγει σε νέα καρτέλα)"></a></li>
+      </ul>
+    </div>
+
+    <div class="footer__cols">
+      <div class="footer__col">
+        <h2 lang="en">We care for every stage of a woman's life.</h2>
+        <p>Γυναικολογία, γονιμότητα, ρομποτική χειρουργική και ολιστική φροντίδα, με επικεφαλής τον Dr. Ηλία Τσάκο.</p>
+        <div class="footer__badges">
+          <span class="badge"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg>ISO 9001:2015</span>
+          <span class="badge"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg>EN 15224:2012</span>
+        </div>
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><svg class="icon" aria-hidden="true"><use href="#i-facebook"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg class="icon" aria-hidden="true"><use href="#i-youtube"/></svg></a>
+        </div>
+      </div>
+      <nav class="footer__col" aria-labelledby="ft-brands"><h2 id="ft-brands">Μονάδες</h2><ul>
+        <li><a href="#">EmbryoClinic IVF</a></li><li><a href="tsakos-clinic.html">Tsakos Clinic</a></li><li><a href="#">AlphaZita</a></li><li><a href="#">Advanced Science</a></li><li><a href="https://www.breast-care.gr/" target="_blank" rel="noopener">Breast Care ↗</a></li>
+      </ul></nav>
+      <nav class="footer__col" aria-labelledby="ft-about"><h2 id="ft-about">Ο Όμιλος</h2><ul>
+        <li><a href="#">Εταιρικό Προφίλ</a></li><li><a href="#">Η Ομάδα</a></li><li><a href="#">Εγκαταστάσεις</a></li><li><a href="#">Συνεργασίες</a></li><li><a href="#">Πιστοποιήσεις</a></li><li><a href="#">Βραβεία</a></li>
+      </ul></nav>
+      <nav class="footer__col" aria-labelledby="ft-pat"><h2 id="ft-pat">Για ασθενείς</h2><ul>
+        <li><a href="#journey">Patient Journey</a></li><li><a href="#international">International Services</a></li><li><a href="#news">Νέα</a></li><li><a href="#">Άρθρα</a></li><li><a href="#">Media Gallery</a></li><li><a href="#contact">Επικοινωνία</a></li>
+      </ul></nav>
+      <div class="footer__col footer__col--contact"><h2>Επικοινωνία</h2>
+        <ul class="footer__contact">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><a class="footer__phone" href="tel:+302310420020">2310 420020</a></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><address>Αδριανουπόλεως 6<br>551 33 Θεσσαλονίκη</address></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><a href="mailto:info@embryoclinic.eu">info@embryoclinic.eu</a></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg><span>Δευ–Παρ 07:00–15:00 · Σάβ 08:00–13:00</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__legal">
+      <p>© 2026 Tsakos Medical Group</p>
+      <ul><li><a href="#">Όροι Χρήσης</a></li><li><a href="#">Πολιτική Απορρήτου</a></li><li><a href="#">Cookies</a></li></ul>
+    </div>
+  </div>
+</footer>
+
+<!-- Mobile sticky contact bar -->
+<div class="mobile-bar" aria-label="Γρήγορη επικοινωνία">
+  <a class="btn btn--secondary" href="tel:+302310420020"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>Κλήση</a>
+  <a class="btn btn--primary" href="#contact"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>Ραντεβού</a>
+</div>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
