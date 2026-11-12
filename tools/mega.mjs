@@ -1,0 +1,13 @@
+import { pathToFileURL } from 'node:url'; import { resolve } from 'node:path';
+const { Browser, sleep } = await import('file:///C:/Users/bkatoglou/AppData/Roaming/Claude/local-agent-mode-sessions/skills-plugin/d7a87ec6-04fd-4dd6-8aba-b8d8b3e1f8a7/bc86d20f-4c7f-43f7-92d8-d19b85b036d6/skills/design-taste-frontend/scripts/lib/cdp.mjs');
+const b = await Browser.launch();
+let p = await b.newPage({ width: 1920, height: 1080 });
+await p.goto(pathToFileURL(resolve('index.html')).href, { settleMs: 800 });
+await p.eval(() => { document.querySelector('[aria-controls="mega-tc"]').click(); return 1; }); await sleep(400);
+await p.screenshot({ path: 'screens/home-1920x1080-megamenu.png', format: 'png' });
+await p.close();
+p = await b.newPage({ width: 390, height: 844, mobile: true });
+await p.goto(pathToFileURL(resolve('index.html')).href, { settleMs: 800 });
+await p.eval(() => { document.querySelector('.masthead__burger').click(); document.querySelector('[aria-controls="dr-tc"]').click(); return 1; }); await sleep(400);
+await p.screenshot({ path: 'screens/home-390x844-menu.png', format: 'png' });
+await p.close(); await b.close();

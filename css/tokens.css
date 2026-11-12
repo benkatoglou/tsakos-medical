@@ -1,0 +1,198 @@
+/* ==========================================================================
+   Tsakos Medical Group — design tokens
+   Names mirror Figma variables: collection/group/name  →  --group-name
+   Fluid values interpolate between the two design frames: 390px and 1920px.
+   ========================================================================== */
+
+:root {
+  /* ---------- Colour / base palette ---------- */
+  --color-white: #FFFFFF;
+  --color-ice: #E8F1F7;
+  --color-mist: #F4F8FB;
+  --color-sand: #E7E0D6;
+  --color-navy: #012D64;
+  --color-navy-hover: #0A3D7E;          /* derived: primary button hover */
+  --color-ec-blue: #0F3580;
+  --color-medical-blue: #2E6FAE;
+  --color-sky: #AFCBE1;                 /* never text */
+  --color-teal: #31A7CA;                /* never small text */
+  --color-teal-text: #1B7A96;
+  --color-ink: #0E1726;
+  --color-body: #3A4556;
+  --color-muted: #5B6678;
+  --color-line: #DCE6EE;
+
+  /* on-dark (footer, navy panels) */
+  --color-on-dark: #FFFFFF;
+  --color-on-dark-muted: #C3D3E6;       /* 9.4:1 on navy */
+  --color-on-dark-line: rgba(255, 255, 255, 0.16);
+
+  /* ---------- Colour / brand accents ---------- */
+  --color-tc-indigo: #271B97;
+  --color-tc-violet: #8360B7;
+  --color-tc-lavender: #A69BDB;
+  --color-tc-lilac: #E6E1F3;
+  --color-tc-ivory: #F1EEE9;
+
+  --color-ec-primary: #0F3580;
+  --color-ec-secondary: #31A7CA;
+  --color-ec-aqua: #DCEFF3;
+
+  --color-az-grey: #4C4C4C;
+  --color-az-cyan: #02B0EA;
+  --color-az-softgrey: #E7ECEF;
+
+  --color-bc-pink: #C46BA8;             /* sampled from supplied Breast Care logo; decorative only */
+  --color-bc-deep: #8E3E78;             /* text-safe deep tone of the Breast Care pink, 7.3:1 */
+
+  /* ---------- Colour / feedback ---------- */
+  --color-star: #B7791F;                /* rating stars (decorative; rating also given as text) */
+
+  /* ---------- Semantic aliases (swap these per brand page) ---------- */
+  --color-accent: var(--color-navy);            /* buttons, active nav */
+  --color-accent-hover: var(--color-navy-hover);
+  --color-accent-soft: var(--color-ice);        /* the one tinted band */
+  --color-eyebrow: var(--color-medical-blue);
+  --color-icon: var(--color-medical-blue);
+  --color-link: var(--color-medical-blue);
+  --color-link-hover: var(--color-ec-blue);
+  --color-focus: var(--color-teal);
+
+  /* ---------- Typography ---------- */
+  --font-family: "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* size: mobile (390) → desktop (1920) */
+  --text-display: clamp(2.125rem, 1.774rem + 1.438vw, 3.5rem);   /* 34 → 56 */
+  --text-h2: clamp(1.75rem, 1.559rem + 0.784vw, 2.5rem);         /* 28 → 40 */
+  --text-h3: clamp(1.25rem, 1.186rem + 0.261vw, 1.5rem);         /* 20 → 24 */
+  --text-h4: clamp(1.0625rem, 1.031rem + 0.131vw, 1.1875rem);    /* 17 → 19 (card titles) */
+  --text-quote: clamp(1.375rem, 1.279rem + 0.392vw, 1.75rem);    /* 22 → 28 */
+  --text-lead: clamp(1.0625rem, 1.015rem + 0.196vw, 1.25rem);    /* 17 → 20 */
+  --text-body: clamp(1rem, 0.984rem + 0.065vw, 1.0625rem);       /* 16 → 17 */
+  --text-small: 0.875rem;                                        /* 14 */
+  --text-xsmall: 0.8125rem;                                      /* 13 (legal, meta) */
+  --text-eyebrow: clamp(0.75rem, 0.734rem + 0.065vw, 0.8125rem); /* 12 → 13 */
+  --text-kpi: clamp(2.25rem, 2.059rem + 0.784vw, 3rem);          /* 36 → 48 */
+
+  --leading-display: 1.1;
+  --leading-h2: 1.15;
+  --leading-h3: 1.3;
+  --leading-lead: 1.55;
+  --leading-body: 1.65;
+  --leading-small: 1.5;
+  --leading-tight: 1.2;
+  --leading-kpi: 1;
+
+  --tracking-eyebrow: 0.08em;
+  --tracking-display: -0.015em;
+  --tracking-tight: -0.01em;
+
+  --measure-body: 68ch;
+  --measure-lead: 46ch;
+
+  /* ---------- Spacing ---------- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --space-10: 128px;
+
+  --section-pad: clamp(4rem, 3.2rem + 3.27vw, 7rem);  /* 64 → 112 */
+  --section-pad-lg: clamp(4rem, 2.98rem + 4.18vw, 8rem); /* 64 → 128 */
+
+  /* ---------- Layout ---------- */
+  --container-max: 1440px;
+  --gutter: clamp(16px, 0.99rem + 0.52vw, 24px);      /* 16 → 24 */
+  --page-pad: clamp(1rem, 0.5rem + 2.1vw, 3.5rem);   /* min side padding; at 1920 the 1440 container leaves 240px */
+  --header-height: 80px;
+  --utility-height: 40px;
+  --brandbar-height: 48px;
+  --mobile-bar-height: 72px;
+
+  /* ---------- Radius ---------- */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+
+  /* ---------- Border ---------- */
+  --border-width: 1px;
+  --border-hairline: 1px solid var(--color-line);
+
+  /* ---------- Elevation ---------- */
+  --shadow-card: 0 1px 2px rgba(1, 45, 100, 0.06), 0 8px 24px rgba(1, 45, 100, 0.06);
+  --shadow-menu: 0 2px 4px rgba(1, 45, 100, 0.05), 0 18px 40px rgba(1, 45, 100, 0.10);
+  --shadow-none: none;
+
+  /* ---------- Controls ---------- */
+  --button-height: 52px;
+  --button-height-sm: 44px;
+  --field-height: 52px;
+  --touch-min: 44px;
+  --icon-sm: 18px;
+  --icon-md: 24px;
+  --icon-lg: 32px;
+  --icon-stroke: 1.5;
+  --focus-ring: 0 0 0 2px var(--color-white), 0 0 0 4px var(--color-focus);
+
+  /* ---------- Motion ---------- */
+  --duration-fast: 150ms;
+  --duration-base: 200ms;
+  --duration-reveal: 250ms;
+  --ease-out: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --reveal-distance: 12px;
+  --reveal-stagger: 60ms;
+
+  /* ---------- Z-index ---------- */
+  --z-header: 50;
+  --z-menu: 60;
+  --z-mobile-bar: 70;
+  --z-overlay: 90;
+}
+
+@media (max-width: 767px) {
+  :root {
+    --header-height: 64px;
+    --button-height: 48px;
+  }
+}
+
+/* Brand themes: applied with <body data-brand="…"> (or on any wrapper) */
+[data-brand="tsakos-clinic"] {
+  --color-accent: var(--color-tc-indigo);
+  --color-accent-hover: #1E1478;
+  --color-accent-soft: var(--color-tc-lilac);
+  --color-eyebrow: var(--color-tc-indigo);
+  --color-icon: var(--color-tc-violet);
+  --color-link: var(--color-tc-indigo);
+  --color-link-hover: var(--color-tc-violet);
+}
+[data-brand="embryoclinic"] {
+  --color-accent: var(--color-ec-primary);
+  --color-accent-hover: #0B2A68;
+  --color-accent-soft: var(--color-ec-aqua);
+  --color-eyebrow: var(--color-ec-primary);
+  --color-icon: var(--color-teal-text);
+  --color-link: var(--color-ec-primary);
+}
+[data-brand="alphazita"] {
+  --color-accent: var(--color-az-grey);
+  --color-accent-hover: #333333;
+  --color-accent-soft: var(--color-az-softgrey);
+  --color-eyebrow: var(--color-az-grey);
+  --color-icon: var(--color-az-grey);
+  --color-link: var(--color-az-grey);
+}
